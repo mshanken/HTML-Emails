@@ -1,0 +1,10 @@
+		
+		<nav id="menu" class="container menu" role="main-menu">
+			<ul>
+		<% for(var nav in public._data){ 
+			if (nav !== 'sitemap') { %>
+				<li class="<%- current.source == nav ? 'active' : '' %>"><a href="<%= nav %>"><%= nav %></a></li>
+			<% }; %>
+		<% }; %>
+			</ul>
+		</nav>

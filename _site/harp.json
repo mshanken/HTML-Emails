@@ -1,0 +1,16 @@
+{
+  "globals": {
+    "title": "Your website title 1",
+    "site_tagline":"Your site tagline 1",
+    "url": "www.yoursite.com",
+    "description": "Your site meta description",
+    "keywords": "your, tags",
+    "copyright": "M. Shanken Communications, Inc.",
+    "name": "project name",
+    "email": "dev@mshanken.com",
+    "layout": "false",
+    "analytics": "you-UA-code-here",
+    "typekit": false,
+    "disqus": false
+  }
+}
