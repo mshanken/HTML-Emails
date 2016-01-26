@@ -1,5 +1,8 @@
 'use strict';
 
 module.exports = {
-	all: ['Gruntfile.js', '<%= prod.scripts %>/**/*.js', 'test/**/*.js', 'grunt-tasks/**/*.js','!<%= prod.scripts %>/**/*.min.js']
+	options:{
+		jshintrc: true
+	},
+	all: ['Gruntfile.js', '<%= config.prod.scripts %>/*.js']
 };

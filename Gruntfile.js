@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   var options = {
     config : {
-      src: "grunt-tasks/*.js",
+      src: 'grunt-tasks/*.js',
       pkg: grunt.file.readJSON('package.json'),
       replacements: require('./grunt-tasks/replacements'), // Regex for refactor task.
       dev: {
@@ -56,6 +56,11 @@ module.exports = function(grunt) {
     'bower',
     'frep',
     'harp:server'
+  ]);
+  grunt.registerTask('lint', [
+    'jscs',
+    'jshint',
+    'csslint'
   ]);
   grunt.registerTask('min', [
     'useminPrepare',
