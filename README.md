@@ -9,16 +9,17 @@ It comes with a bootstrap 3 theme though you can change that by creating a new t
 Check out harpjs for more [info](http://harpjs.com/docs/)
 
 #How it works
-The following are the requirenments before you start a project
+The following are required before you start a project
 
 1. Node
 2. NPM
 3. Grunt
+4. Bower
 
-This is a static page site build with [Harpjs](http://harpjs.com/). Once you have the requirements installed you can now clone this repo or git pull to update. You can start working on it, a list of commads at your dispose. Enjoy it!
+This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
 ##```npm start```
-Will install all project dependencies.
+Will install project dependencies.
 
 ##```grunt server```
 Runs harp server from your harpjs working directory ```_site/```, after you run this command open your browser with this location http://localhost:9000 to preview it. Type ```ctrl+c``` to turn off the server.
@@ -33,3 +34,8 @@ Like ```grunt server``` it runs another server but this one serves the generated
 **NOTE:** this command should run at the **_gh-pages_** branch only.
 
 This command will copy the generated HTML (compiled) version of your site at rooted level so it can be render at github gh-pages.
+
+#What in here
+One you have ran ```npm start``` check the _site/public folder (your working directory/folder) everyhing you need to create a website is there, you can add more assets trough bower if needs to.
+By deafult it comes with a bootstarp theme, jquery 1.11, modernizr and HTML5 shim, for IE6-8 support of HTML5 elements.
+You want to use jquery 2, instead of 1, just run ```npn run jquery-2``` and you should have it.
