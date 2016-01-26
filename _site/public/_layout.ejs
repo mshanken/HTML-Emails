@@ -30,14 +30,14 @@
 		<main id="main" class="container main" role="main">
 			<div class="row wrapper">
 				<% if ( current.path[0] === "index" || current.source === "404" ) { %>
-		      		<article id="article" class="article col-md-8" role="main-article">
+		      		<article id="article" class="article" role="main-article">
 		      			<h1>page title</h1>
 		      			<%- yield %>
 		      			<p>Your working environment is: <%- environment %></p>
 
 		      			<h2>Your variables from global/data file </h2>
 		      			<pre><%- JSON.stringify(public, null, '\t') %></pre></article>
-		      		<aside id="aside" class="aside col-md-4" role="sidebar">
+		      		<aside id="aside" class="aside " role="sidebar">
 		      			<h2>Your variables from current object</h2>
 		      			<pre><%- JSON.stringify(current, null, '\t') %></pre>
 		      		</aside>
