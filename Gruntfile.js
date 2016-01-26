@@ -46,10 +46,11 @@ module.exports = function(grunt) {
     'uglify'
   ]);
   grunt.registerTask('gh-pages', [
-    'harp:ghpages',
+    'harp:gh-pages',
     'concat',
     'uglify',
-    'htmlmin'
+    'htmlmin',
+    'copy:ghpages'
   ]);
   grunt.registerTask('start', [
     'bower',
