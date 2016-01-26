@@ -20,6 +20,7 @@ To start a new project just clone the repo and run the following commands
 
 1. ```npm start``` 
 2. ```grunt start```
+3. Check [http://localhost:9000](http://localhost:9000) in your browser.
 
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
