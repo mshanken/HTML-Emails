@@ -46,7 +46,7 @@ module.exports = function(grunt) {
     'uglify'
   ]);
   grunt.registerTask('gh-pages', [
-    'harp:gh-pages',
+    'harp:dist',
     'concat',
     'uglify',
     'htmlmin',
