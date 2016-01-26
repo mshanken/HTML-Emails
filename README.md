@@ -16,7 +16,10 @@ The following are required before you start a project
 3. Grunt
 4. Bower
 
-To start a new project just clone the repo and run the following commands ```npm start``` ```grunt start```
+To start a new project just clone the repo and run the following commands 
+
+1. ```npm start``` 
+2. ```grunt start```
 
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
