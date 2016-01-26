@@ -1,6 +1,6 @@
 #Harpjs Boilerplate
 
-This is a starter-kit for building static HTML sites dinamically.
+This is a starter-kit for building a static web site dinamically.
 
 Clone to create a new project. them run `npm start` and now you can start creating your own static site.
 
