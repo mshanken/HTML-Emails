@@ -39,3 +39,6 @@ This command will copy the generated HTML (compiled) version of your site at roo
 One you have ran ```npm start``` check the _site/public folder (your working directory/folder) everyhing you need to create a website is there, you can add more assets trough bower if needs to.
 By deafult it comes with a bootstarp theme, jquery 1.11, modernizr and HTML5 shim, for IE6-8 support of HTML5 elements.
 You want to use jquery 2, instead of 1, just run ```npn run jquery-2``` and you should have it.
+
+#What's next?
+TODO...
