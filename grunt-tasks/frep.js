@@ -10,7 +10,7 @@ module.exports = {
         expand: true,
         cwd: '<%= config.dev.style %>/vendor',
         src: ['bootstrap.less'],
-        dest: '<%= config.dev.style %>',
+        dest: '<%= config.dev.style %>/vendor',
         ext: '.less'
       }
     ]

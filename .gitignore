@@ -40,8 +40,6 @@ Gemfile.lock
 lib/SysConfig.config.php
 web/webgrind/
 web/phpinfo.php
-www/webgrind/
-www/phpinfo.php
 
 # For harp
 www/

@@ -3,17 +3,16 @@
 module.exports = {
   js: {
     src: [
-      'www/js/vendor/*.js',
-      '!www/js/vendor/modernizr.js',
-      '!www/js/vendor/require.js'
+      '<%= config.prod.script %>/vendor/*.js',
+      '!<%= config.prod.script %>/vendor/modernizr.js'
     ],
-    dest: 'www/js/main.js'
+    dest: '<%= config.prod.script %>/build.min.js'
   },
   css: {
     src: [
-      'www/css/vendor/bootstrap.js',
-      'www/css/theme.js'
+      '<%= config.prod.style %>/vendor/bootstrap.css',
+      '<%= config.prod.style %>/theme.css'
     ],
-    dest: 'web/js/build-main.min.js'
+    dest: '<%= config.prod.style %>/build.min.css'
   }
 } ;

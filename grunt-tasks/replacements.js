@@ -6,7 +6,7 @@ module.exports = {
 	    },
 	    {
 	      pattern: /(@import ")(bower_components\/bootstrap\/less\/)(variables)";/g,
-	      replacement: '$1$3";'
+	      replacement: '@import "../$3";'
 	    }
 	]
 };

@@ -17,10 +17,10 @@ module.exports = function(grunt) {
       },
       prod: {
         root: 'www',
-        style: '<%= root %>/css',
-        images: '<%= root %>/images',
-        script: '<%= root %>/js',
-        font: '<%= root %>/fonts'
+        style: 'www/css',
+        images: 'www/images',
+        script: 'www/js',
+        font: 'www/fonts'
       }
     }
   };
@@ -36,6 +36,9 @@ module.exports = function(grunt) {
   // grunt.registerTask('default', ['bower', 'jquery']);
   grunt.registerTask('server', [
     'harp:server'
+  ]);
+  grunt.registerTask('static', [
+    'harp:staticserver'
   ]);
   grunt.registerTask('compile', [
     'harp:dist'
