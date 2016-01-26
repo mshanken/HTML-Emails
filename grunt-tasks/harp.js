@@ -3,19 +3,19 @@
 module.exports = {
   server: {
   	server: true,
-  	source: '_site'
+  	source: '<%= config.prod.root %>'
   },
   staticserver: {
     server:true,
-    source: 'www',
+    source: '<%= config.prod.root %>',
     port: 8800
   },
   dist: {
-    source: '_site',
-    dest: 'www'
+    source: '<%= config.prod.root %>',
+    dest: '<%= config.dev.root %>'
   },
   ghpages: {
-    source: '_site',
+    source: '<%= config.prod.root %>',
     dest: './'
   }
 };
