@@ -1,5 +1,5 @@
 (function () {
-	"use strict"
+  "use strict";
 
-	 console.log('loaded...');
+  console.log("loaded...");
 })($);
