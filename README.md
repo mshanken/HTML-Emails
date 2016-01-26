@@ -16,10 +16,15 @@ The following are required before you start a project
 3. Grunt
 4. Bower
 
+To start a new project just clone the repo and run the following commands ```npm start``` ```grunt start```
+
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
 ##```npm start```
 Will install project dependencies.
+
+##```grunt start```
+To make (bower) installed assets available in your project.
 
 ##```grunt server```
 Runs harp server from your harpjs working directory ```_site/```, after you run this command open your browser with this location http://localhost:9000 to preview it. Type ```ctrl+c``` to turn off the server.
