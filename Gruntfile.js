@@ -41,10 +41,14 @@ module.exports = function(grunt) {
     'harp:staticserver'
   ]);
   grunt.registerTask('compile', [
-    'harp:dist'
+    'harp:dist',
+    'concat',
+    'uglify'
   ]);
   grunt.registerTask('gh-pages', [
     'harp:dist',
+    'concat',
+    'uglify',
     'copy:ghpages'
   ]);
   grunt.registerTask('start', [

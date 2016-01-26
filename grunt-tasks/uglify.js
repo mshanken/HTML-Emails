@@ -5,7 +5,7 @@ module.exports = {
     mangle: false
   },
   js: {
-    src:['web/js/main.js'],
-    dest: 'web/js/build-main.min.js'
+    src:['<%= config.prod.script %>/build.js'],
+    dest: '<%= config.prod.script %>/build.min.js'
   }
 };
