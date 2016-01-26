@@ -17,19 +17,19 @@ The following are the requirenments before you start a project
 
 This is a static page site build with [Harpjs](http://harpjs.com/). Once you have the requirements installed you can now clone this repo or git pull to update. You can start working on it, a list of commads at your dispose. Enjoy it!
 
-##```npm run start```
-To install all projectdependencies.
+##```npm start```
+Will install all project dependencies.
 
 ##```grunt server```
-Runs harp server from your harpjs working directory (_site), once you run this command open your browser with this location http://localhost:9000 to preview. Use ```ctrl+c``` to turn off the server.
+Runs harp server from your harpjs working directory ```_site/```, after you run this command open your browser with this location http://localhost:9000 to preview it. Type ```ctrl+c``` to turn off the server.
 
 ##```grunt compile```
-Runs harp compile, this command will generate the static HTML of your dinamic website.
+Runs harp compile to generate the static HTML of your dinamic website.
 
 ##```grunt static```
-Like ```grunt server``` it turns on a server but this one serves all generated HTML, this can help you to review the generated HTML site works. Open your browser with this url http://localhost:8800.
+Like ```grunt server``` it runs another server but this one serves the generated HTML (compiled), this can help to review the generated HTML site. Open your browser with this url http://localhost:8800.
 
 ##```grunt gh-pages```
 **NOTE:** this command should run at the **_gh-pages_** branch only.
 
-This command will copy the compiled (HTML generated) version of your working site in the root folder so it can be render at gh-pages in the github site.
+This command will copy the generated HTML (compiled) version of your site at rooted level so it can be render at github gh-pages.
