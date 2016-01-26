@@ -3,13 +3,13 @@
 module.exports = {
   web: {
     expand: true,
-    cwd: '<%= prod.root %>',
+    cwd: '<%= config.prod.root %>',
     src: '**/*.*',
     dest: 'web/'
   },
   ghpages: {
     expand: true,
-    cwd: '<%= prod.root %>',
+    cwd: '<%= config.prod.root %>',
     src: '**/*.*',
     dest: './'
   }

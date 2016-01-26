@@ -13,5 +13,9 @@ module.exports = {
   dist: {
     source: '_site',
     dest: 'www'
+  },
+  ghpages: {
+    source: '_site',
+    dest: './'
   }
 };

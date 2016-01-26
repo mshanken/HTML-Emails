@@ -15,9 +15,9 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: 'www',
+      cwd: '<%= config.prod.root %>',
       src: ['{,*/}*.html'],
-      dest: 'web'
+      dest: '<%= config.prod.root %>'
     }]
   }
 };
