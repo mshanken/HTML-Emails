@@ -6,7 +6,7 @@ Clone to create a new project. them run `npm start` and now you can start creati
 
 <strike>It comes with a bootstrap 3 theme though you can change that by creating a new theme, just follow the theme structure from the default theme. Them in the layout file change your new theme name from the default path.</strike>
 
-<strong>NEW</strong> it comes with theme-builder.
+<strong>NEW</strong> Harp-Boilerplate comes with theme-builder
 
 Check out harpjs for more [info](http://harpjs.com/docs/)
 
