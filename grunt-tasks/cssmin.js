@@ -2,12 +2,12 @@
 
 module.exports = {
   dist: {
-		expand: true,
-		cwd: 'www/css',
-		src: '{,*/}*.css',
-		dest: 'www/css',
-		ext: '.css'
-	}
+  	options: {
+  		sourceMap: true
+  	},
+  	files: {
+  		"www/css/build.min.css":"_site/public/css/main.css"
+  	}
 };
 
 
