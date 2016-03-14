@@ -56,7 +56,7 @@ As mentioned it comens with bootstrap as a default theme, you can modify this th
 
 Need another JS/Jquery library? install it with bower, use ```bower install jslibraryname --save``` them ```grunt bower``` to place new uplaoaded library in the vandor folder fo your site
 
-By default site comes with jquery 1 (latest version installed, you can change to version 2 by just running ```npn run jquery-2``` you also need update the path to point to the update version in the template file.
+By default, site comes with jquery 1 (latest version installed, you can change to version 2 by just running ```npn run jquery-2``` you also need update the path to point to the update version in the template file.
 
 #What's next?
 TODO...
