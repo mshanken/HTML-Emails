@@ -52,15 +52,11 @@ By deafult it comes with a bootstarp theme, jquery 1.11, modernizr and HTML5 shi
 You want to use jquery 2, instead of 1, just run ```npn run jquery-2``` and you should have it.
 
 #How to work with it?
-As mentioned it comens with bootstrap as a default theme.
+As mentioned it comens with bootstrap as a default theme, you can modify this theme by using the theme builder
 
-Here's the files you want to modify if you want to keep this theme.
-1. ```_site/public/css/theme.less``` to add your style rules.
-2. ```_site/public/css/variables.less``` to change theme default values, like colors, font, etc.
+Need another JS/Jquery library? install it with bower, use ```bower install jslibraryname --save``` them ```grunt bower``` to place new uplaoaded library in the vandor folder fo your site
 
-If you ned any other JS/Jquery library install it with bower, use the --save option to keep in the asstes list as this vendor libraries are not added in the repo. The same goes for any grunt task newly added.
-
-Run ```npn run jquery-2``` if you want to use jquery version 2 and up, also update the path to point to the update version.
+By default site comes with jquery 1 (latest version installed, you can change to version 2 by just running ```npn run jquery-2``` you also need update the path to point to the update version in the template file.
 
 #What's next?
 TODO...
