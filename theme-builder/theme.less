@@ -1,0 +1,66 @@
+/*******************************
+        Import Directives
+*******************************/
+
+/*------------------
+       Theme
+-------------------*/
+
+@theme: @@element; // @(@type)
+
+/*--------------------
+   Site Variables
+---------------------*/
+
+/* Default site.variables */
+
+@import "definitions/variables";
+// @import "@{themesFolder}/default/variables.variables";
+
+/* Component's site.variables */
+@import (optional) "@{themesFolder}/@{theme}/variables.variables";
+
+/* Site theme site.variables */
+@import (optional) "@{siteFolder}/variables.variables";
+
+/*-------------------
+ Component Variables
+---------------------*/
+
+/* Default */
+@import "@{themesFolder}/default/@{elementType}s/@{element}.variables";
+
+/* Packaged Theme */
+@import (optional) "@{themesFolder}/@{theme}/@{elementType}s/@{element}.variables";
+
+/* Site Theme */
+@import (optional) "@{siteFolder}/@{elementType}s/@{element}.variables";
+
+
+/*******************************
+    Mix-ins: Loading overrides
+*******************************/
+
+/*--------------------
+   Site Mixins
+---------------------*/
+
+@import "mixins";
+
+/*------------------
+       Fonts
+-------------------*/
+
+.loadFonts() when (@importGoogleFonts) {
+  @import url('@{googleProtocol}fonts.googleapis.com/css?family=@{googleFontRequest}');
+}
+
+/*------------------
+     Overrides
+-------------------*/
+
+.loadUIOverrides() {
+  @import (optional) "@{themesFolder}/@{theme}/@{elementType}s/@{element}.overrides";
+  @import (optional) "@{siteFolder}/@{elementType}s/@{element}.overrides";
+}
+

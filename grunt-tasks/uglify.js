@@ -2,7 +2,8 @@
 
 module.exports = {
   options: {
-    mangle: false
+    mangle: false,
+    sourceMap: true
   },
   js: {
     src:['<%= config.prod.script %>/build.js'],
