@@ -9,18 +9,18 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json'),
       replacements: require('./grunt-tasks/replacements'), // Regex for refactor task.
       dev: {
-        root: './_site/public',
-        style: './_site/public/css',
+        root:   './_site/public',
+        style:  './_site/public/css',
         images: './_site/public/images',
         script: './_site/public/js',
-        font: './_site/public/fonts'
+        font:   './_site/public/fonts'
       },
       prod: {
-        root: 'www',
-        style: 'www/css',
+        root:   'www',
+        style:  'www/css',
         images: 'www/images',
         script: 'www/js',
-        font: 'www/fonts'
+        font:   'www/fonts'
       }
     }
   };
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     'concat',
     'uglify',
     'htmlmin',
-    'cssmin'
+    'cssmin',
     'copy:ghpages'
   ]);
   grunt.registerTask('start', [
