@@ -55,7 +55,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('start', [
     'bower',
-    'frep',
+    'less',
     'harp:server'
   ]);
   grunt.registerTask('lint', [

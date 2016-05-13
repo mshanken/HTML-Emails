@@ -20,9 +20,10 @@ The following are required before you start a project
 
 To start a new project just clone the repo and run the following commands 
 
-1. ```npm start``` 
-2. ```grunt start```
-3. Check [http://localhost:9000](http://localhost:9000) in your browser.
+1. ```npm install``` (if you see error log in your screen just prepend sudo)
+2. ```bower install```
+3. ```npm start``` 
+4. Check [http://localhost:9000](http://localhost:9000) in your browser.
 
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
