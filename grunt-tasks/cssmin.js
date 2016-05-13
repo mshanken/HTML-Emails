@@ -8,6 +8,7 @@ module.exports = {
   	files: {
   		"www/css/build.min.css":"_site/public/css/main.css"
   	}
+  }
 };
 
 
