@@ -4,9 +4,9 @@ This is a starter-kit for building a static web site dinamically.
 
 Clone to create a new project. them run `npm start` and now you can start creating your own static site.
 
-<strike>It comes with a bootstrap 3 theme though you can change that by creating a new theme, just follow the theme structure from the default theme. Them in the layout file change your new theme name from the default path.</strike>
+It comes with a bootstrap 3 theme though you can change that by creating a new theme, just follow the theme structure from the default theme. Them in the layout file change your new theme name from the default path.
 
-<strong>NEW:</strong> Harp-Boilerplate comes with theme-builder
+<strong>NEW:</strong> Harp-Boilerplate comes with theme-builder, just move to theme-builder branch to get this feature.
 
 Check out harpjs for more [info](http://harpjs.com/docs/)
 
@@ -18,19 +18,15 @@ The following are required before you start a project
 3. Grunt
 4. Bower
 
-To start a new project just clone the repo and run the following commands 
+To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
 
-1. ```npm start``` 
-2. ```grunt start```
-3. Check [http://localhost:9000](http://localhost:9000) in your browser.
+1. ```npm install``` (if you see error logs in your screen just prepend sudo)
+2. ```bower install```
+3. ```npm start``` 
+4. Check [http://localhost:9000](http://localhost:9000) in your browser.
+    a. If you want to run with browser-sync just type the following ```browser-sync start --proxy 'localht:9000' --files '_site/public/**/*.jade, _site/public/**/*.md, _site/public/**/*.less, _site/public/**/_data.json'``` (this will require you to open a new tap in your terminal.)
 
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
-
-##```npm start```
-Will install project dependencies.
-
-##```grunt start```
-To make (bower) installed assets available in your project.
 
 ##```grunt server```
 Runs harp server from your harpjs working directory ```_site/```, after you run this command open your browser with this location http://localhost:9000 to preview it. Type ```ctrl+c``` to turn off the server.
@@ -52,9 +48,11 @@ By deafult it comes with a bootstarp theme, jquery 1.11, modernizr and HTML5 shi
 You want to use jquery 2, instead of 1, just run ```npn run jquery-2``` and you should have it.
 
 #How to work with it?
-As mentioned it comens with bootstrap as a default theme, you can modify this theme by using the theme builder
+Well it has bootstrap variables.less along with theme.less files in the css forlder so just overwrite those as you pleased.
 
-Need another JS/Jquery library? install it with bower, use ```bower install jslibraryname --save``` them ```grunt bower``` to place new uplaoaded library in the vandor folder fo your site
+Check the _layout.ejs to start adding your own style, and follow harp-js convension. There's a defult theme architecture you want to check or follow out as well. You can add a new theme instead of modifying default theme so duplicate the default theme in the theme folder, rename itand now you have a new theme to play with. Keep in mind that you also need to change path to new theme instead of default in the layout file.
+
+```bower install a-js-or-jquery-plugin --save``` to install a new vendor plugin/library them ```grunt bower``` to place new installed plugin/library inside vendor folder of the app.
 
 By default, site comes with jquery 1.(latest) version installed, you can change to version 2 by just running ```npn run jquery-2```, you also need update the path to point to the update version in the template file.
 
