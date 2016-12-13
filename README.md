@@ -24,7 +24,7 @@ To start a new project just clone the repo and run the following commands (remov
 2. ```bower install```
 3. ```npm start``` 
 4. Check [http://localhost:9000](http://localhost:9000) in your browser.
-    a. If you want to run with browser-sync just type the following ```browser-sync start --proxy 'localht:9000' --files '_site/public/**/*.jade, _site/public/**/*.md, _site/public/**/*.less, _site/public/**/_data.json'``` (this will require you to open a new tap in your terminal.)
+    a. If you want to run with browser-sync just type the following ```browser-sync start --proxy 'localhost:9000' --files '_site/public/**/*.jade, _site/public/**/*.md, _site/public/**/*.less, _site/public/**/_data.json'``` (this will require you to open a new tap in your terminal.)
 
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 

@@ -13,7 +13,7 @@
 					<ul class="nav navbar-nav">
 		<% for(var nav in public._data){ 
 			if (nav !== 'sitemap') { %>
-						<li class="<%- current.source == nav ? 'active' : '' %>"><a href="<%= nav %>"><%= nav %></a></li>
+						<li class="<%- current.source == nav ? 'active' : '' %>"><a href="/<%= nav %>"><%= nav %></a></li>
 			<% }; %>
 		<% }; %>
 					</ul>
