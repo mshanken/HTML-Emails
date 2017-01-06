@@ -4,5 +4,5 @@ module.exports = {
   options: {
     csslintrc: '.csslintrc'
   },
-  src: ['<%= config.prod.style %>/*.css', '<%= config.prod.style %>/*.sass']
+  src: ['<%= config.prod.style %>/*.css', '<%= config.prod.style %>/*.scss']
 }
