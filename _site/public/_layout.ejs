@@ -6,7 +6,9 @@
 	<head>
 		<%- partial("_themes/default/partials/_headingtags") %>
 		<%- partial("_themes/default/partials/_styles") %>
-	    <%- partial("_themes/default/partials/_ga") %>
+	    <% if (ga) { %>
+	    		<%- partial("_themes/default/partials/_ga") %>
+	    <% 	} %>
 	
 		<!--[if lt IE 9]>
 	      <script src="/js/vendor/html5shiv.js"></script>

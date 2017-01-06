@@ -9,7 +9,10 @@
     "name": "project name",
     "email": "dev@mshanken.com",
     "layout": "false",
+    "ga": false,
     "analytics": "you-UA-code-here",
+    "dfp": false,
+    "openGraph": false,
     "typekit": false,
     "disqus": false
   }
