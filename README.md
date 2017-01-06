@@ -48,7 +48,7 @@ This command will copy the generated HTML (compiled) version of your site at roo
 **NOTE:** this command should run once you are in the **_gh-pages_** branch only.
 
 ##What's in here?
-Once you have ran ```npm start``` check the _site/public folder (your working directory/folder) everyhing you need to create a website is there, you can add more assets trough npm or bower if needs to.
+Once you have followed the initial steps check your new working directory _site/public folder to familiarize, everyhing you need to create a website is there, you can add more assets trough npm or bower if needs to.
 
 Bootstrap 4.<br>
 jqury latest (3^).<br>
