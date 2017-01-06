@@ -2,6 +2,7 @@
   "globals": {
     "title": "Your website globals",
     "site_tagline":"Your site tagline 1",
+    "subject":"",
     "url": "www.yoursite.com",
     "description": "Your site meta description",
     "keywords": "your, tags",

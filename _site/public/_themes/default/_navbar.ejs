@@ -22,7 +22,7 @@
 		<% for(var nav in public._data){ 
 			if (nav !== 'sitemap') { %>
 				<li class="nav-item">
-					<a href="/<%= nav %>" class="nav-link<%- current.source == nav ? ' active' : '' %> text-white"><% if(nav === current.source){ %>home<% } else { %><%= nav %><% }; %></a>
+					<a href="/<%= nav %>" class="nav-link<%- current.source == nav ? ' active' : '' %> text-white"><% if(nav === "index"){ %>home<% } else { %><%= nav %><% }; %></a>
 				</li>
 			<% }; %>
 		<% }; %>

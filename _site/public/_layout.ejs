@@ -30,13 +30,11 @@
 		<%- partial("_themes/default/_navbar") %>
 
 		<main id="main" class="container main" role="main">
-				
-			<% if ( current.path[0] === "index" || current.source === "404") { %>
+			<% if ( current.path[0] === "index" || current.source === "404" || current.source === "info") { %>
 	      		<%- yield %>
 	  		<% } else  { %>
 	  			<%- partial("_themes/default/partials/_content", { yield: yield }) %>
 	  		<% } %>
-
 		</main>
 		
 		<%- partial("_themes/default/_footer") %>
