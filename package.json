@@ -22,9 +22,10 @@
     "url": "https://github.com/mshanken/mshankenstartkit/issues"
   },
   "scripts": {
-    "start": "mkdir _site/public/js/vendor && npm run jquery && npm run modernizr && grunt start",
+    "start": "npm run jquery && npm run modernizr && grunt start",
     "modernizr": "node_modules/modernizr/bin/modernizr -c config-all.json && mv modernizr.js _site/public/js/vendor/modernizr.js",
-    "jquery": "jquery-builder > _site/public/js/vendor/jquery-1.11.1.js",
+    "jquery": "cp bower_components/jquery/dist/jquery.js _site/public/js/vendor/",
+    "jquery-1": "jquery-builder > _site/public/js/vendor/jquery-1.11.1.js",
     "jquery-2": "jquery-builder --version 2.1.1 > _site/public/js/vendor/jquery-2.1.1.js",
     "test": ""
   },

@@ -54,8 +54,7 @@ module.exports = function(grunt) {
     'copy:ghpages'
   ]);
   grunt.registerTask('start', [
-    'bower',
-    'harp:server'
+    'bower'
   ]);
   grunt.registerTask('lint', [
     'jscs',
