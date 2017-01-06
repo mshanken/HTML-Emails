@@ -3,8 +3,11 @@
 		"title": "Harp Boiler Plate",
 		"site_tagline":"A boilerplate to build a static website dinamically"
 	},
+	"info": {
+		"title": "Your global variables"
+	},
 	"about": {
-		"title": ""
+		"title": "About page from a sub-dir"
 	},
 	"sitemap": {
 		"layout": false

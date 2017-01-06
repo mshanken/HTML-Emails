@@ -1,0 +1,13 @@
+<div class="row">
+	<article id="article" class="article col-sm-8" role="main-article">
+		<h1>page title</h1>
+		<p>Your working environment is: <%- environment %></p>
+
+		<h2>Your variables from global/data file </h2>
+		<pre><%- JSON.stringify(public, null, '\t') %></pre>
+	</article>
+	<aside id="aside" class="aside col-sm-4" role="sidebar">
+		<h2>Your variables from current object</h2>
+		<pre><%- JSON.stringify(current, null, '\t') %></pre>
+	</aside>
+</div>

@@ -14,7 +14,7 @@ module.exports = {
   },
   css: {
     src: [
-      '<%= config.prod.style %>/main.css',
+      '<%= config.prod.style %>/theme.css',
       '<%= config.prod.style %>/vendor/*.css'
     ],
     dest: '<%= config.prod.style %>/build.min.css'

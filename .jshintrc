@@ -101,14 +101,10 @@
         "trailing": true,
         "smarttabs": true,
         "require": true
-    }        // additional predefined global variables
-}
+    },        // additional predefined global variables
 
-{
-  
-  "nomen": false,
-  "onevar": true,
-  "passfail": false,
-  "white": true,
-
+    "nomen": false,
+    "onevar": true,
+    "passfail": false,
+    "white": true
 }

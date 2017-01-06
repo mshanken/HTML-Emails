@@ -1,7 +1,8 @@
 {
   "globals": {
-    "title": "Your website title 1",
+    "title": "Your website globals",
     "site_tagline":"Your site tagline 1",
+    "subject":"",
     "url": "www.yoursite.com",
     "description": "Your site meta description",
     "keywords": "your, tags",
@@ -9,7 +10,10 @@
     "name": "project name",
     "email": "dev@mshanken.com",
     "layout": "false",
+    "ga": false,
     "analytics": "you-UA-code-here",
+    "dfp": false,
+    "openGraph": false,
     "typekit": false,
     "disqus": false
   }

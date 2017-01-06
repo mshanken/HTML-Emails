@@ -8,7 +8,7 @@ module.exports = {
     js_dest     : '<%= config.dev.script %>/vendor',
     css_dest    : '<%= config.dev.style %>/vendor',
     less_dest   : '<%= config.dev.style %>/vendor',
-    sass_dest   : '<%= config.dev.style %>/vendor',
+    scss_dest   : '<%= config.dev.style %>/vendor',
     options: {
       keepExpandedHierarchy: false,
       ignorePackages: ['jquery','modernizr']

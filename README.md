@@ -1,60 +1,59 @@
 #Harpjs Boilerplate
 
-This is a starter-kit for building a static web site dinamically.
+This is a starter-kit for building a static web site dinamically. Perfect for small promotional or event web-sites.
+Check Harpjs for advance use like [M. Shanken](http://www.mshanken.com/).
 
-Clone to create a new project. them run `npm start` and now you can start creating your own static site.
+<strong>NEW:</strong> Harp-Boilerplate works with boostrap 4 by default, move to "less branch" if you want to use less.
 
-It comes with a bootstrap 3 theme though you can change that by creating a new theme, just follow the theme structure from the default theme. Them in the layout file change your new theme name from the default path.
-
-<strong>NEW:</strong> Harp-Boilerplate comes with theme-builder, just move to theme-builder branch to get this feature.
-
-Check out harpjs for more [info](http://harpjs.com/docs/)
+Check out [harpjs for more info](http://harpjs.com/docs/).
 
 #How it works
-The following are required before you start a project
+Before you start, make sure you have the following requirements for using this tool.
 
-1. Node
-2. NPM
-3. Grunt
-4. Bower
+1. Ruby
+2. Node
+3. NPM
+4. Grunt (you can also run this locally, if prefer)
+5. Bower  (you can also run this locally, if prefer)
 
 To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
 
-1. ```npm install``` (if you see error logs in your screen just prepend sudo)
-2. ```bower install```
-3. ```npm start``` 
-4. Check [http://localhost:9000](http://localhost:9000) in your browser.
-    a. If you want to run with browser-sync just type the following ```browser-sync start --proxy 'localht:9000' --files '_site/public/**/*.jade, _site/public/**/*.md, _site/public/**/*.less, _site/public/**/_data.json'``` (this will require you to open a new tap in your terminal.)
+1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
+2. ```npm install``` (if you see error logs in your screen just prepend sudo)
+3. ```bower install```
+4. ```mkdir _site/public/js/vendor```
+5. ```npm start```<br>
+**Note:** This command should run only once for every new project to bring all main components up.
+6. ```grunt server```
 
+Check [http://localhost:9000](http://localhost:9000) in your browser. That's all, start working in your project now.
+
+If you want to run with browser-sync just type the following ```browser-sync start --proxy 'localhost:9000' --files '_site/public/**/*.jade, _site/public/**/*.md, _site/public/**/*.scss, _site/public/**/_data.json'``` (this will require you to open a new tap in your terminal as main server need to run at the same time ```grunt server```)
+
+##list of commads
 This is a list of commads at your dispose to create a simple static web-site. Enjoy it!
 
-##```grunt server```
+###```grunt server```
 Runs harp server from your harpjs working directory ```_site/```, after you run this command open your browser with this location http://localhost:9000 to preview it. Type ```ctrl+c``` to turn off the server.
 
-##```grunt compile```
+###```grunt compile```
 Runs harp compile to generate the static HTML of your dinamic website.
 
-##```grunt static```
+###```grunt static```
 Like ```grunt server``` it runs another server but this one serves the generated HTML (compiled), this can help to review the generated HTML site. Open your browser with this url http://localhost:8800.
 
-##```grunt gh-pages```
-**NOTE:** this command should run at the **_gh-pages_** branch only.
-
+###```grunt gh-pages```
 This command will copy the generated HTML (compiled) version of your site at rooted level so it can be render at github gh-pages.
 
-#What's in here?
-One you have ran ```npm start``` check the _site/public folder (your working directory/folder) everyhing you need to create a website is there, you can add more assets trough bower if needs to.
-By deafult it comes with a bootstarp theme, jquery 1.11, modernizr and HTML5 shim, for IE6-8 support of HTML5 elements.
-You want to use jquery 2, instead of 1, just run ```npn run jquery-2``` and you should have it.
+**NOTE:** this command should run once you are in the **_gh-pages_** branch only.
 
-#How to work with it?
-Well it has bootstrap variables.less along with theme.less files in the css forlder so just overwrite those as you pleased.
+##What's in here?
+Once you have followed the initial steps check your new working directory _site/public folder to familiarize, everyhing you need to create a website is there, you can add more assets trough npm or bower if needs to.
 
-Check the _layout.ejs to start adding your own style, and follow harp-js convension. There's a defult theme architecture you want to check or follow out as well. You can add a new theme instead of modifying default theme so duplicate the default theme in the theme folder, rename itand now you have a new theme to play with. Keep in mind that you also need to change path to new theme instead of default in the layout file.
-
-```bower install a-js-or-jquery-plugin --save``` to install a new vendor plugin/library them ```grunt bower``` to place new installed plugin/library inside vendor folder of the app.
-
-By default, site comes with jquery 1.(latest) version installed, you can change to version 2 by just running ```npn run jquery-2```, you also need update the path to point to the update version in the template file.
-
-#What's next?
-TODO...
+Bootstrap 4.<br>
+jqury latest (3^).<br>
+HarpJS built-in preprocessing configured to work with a default theme.<br>
+Web-server to preview your work on your browser.<br>
+BrowserSync to preview your changes as you work with out refreshing your browser.<br>
+gh-pages branch to compile your work into the root folder for github to render your static html.<br>
+Google analitics and openGraph code ready to use, turned off by default.

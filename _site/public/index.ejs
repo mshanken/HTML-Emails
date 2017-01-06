@@ -1,27 +1,14 @@
-<!-- <article id="article" class="article" role="main-article">
-	<h1>page title</h1>
-	<p>Your working environment is: <%%- environment %></p>
-
-	<h2>Your variables from global/data file </h2>
-	<pre><%%- JSON.stringify(public, null, '\t') %></pre></article>
-<aside id="aside" class="aside " role="sidebar">
-	<h2>Your variables from current object</h2>
-	<pre><%%- JSON.stringify(current, null, '\t') %></pre>
-</aside> -->
-
-<div class="jumbotron">
-	<div class="container">
-		<h1>Hello, world!</h1>
-		<p>This is HTML5 Boilerplate to use along with harp-boilerplate</p>
-		<p>
-			<a class="btn btn-primary btn-lg">Learn more</a>
-		</p>
+<div class="row">
+	<div class="col-sm-12 jumbotron">
+		<h1 class="display-3">Hello, world!</h1>
+		<p class="lead">This is HTML5 Boilerplate to use along with harp-boilerplate</p>
+		<a href="/" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Learn more</a>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-4 col-md-offset-2"><%- partial("_homepage/html5bp") %></div>
-	<div class="col-md-4"><%- partial("_homepage/bootstrap") %></div>
+	<div class="col-sm-4 offset-sm-2"><%- partial("_homepage/html5bp") %></div>
+	<div class="col-sm-4"><%- partial("_homepage/bootstrap") %></div>
 </div>
 <div class="row">
-	<div class="col-md-4 col-md-offset-2"><%- partial("_homepage/harpjs") %></div>
+	<div class="col-sm-8 offset-sm-2"><%- partial("_homepage/harpjs") %></div>
 </div>
