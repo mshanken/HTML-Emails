@@ -1,4 +1,4 @@
-#Harpjs Boilerplate
+#Harpjs Boilerplate (Less [css] version)
 
 This is a starter-kit for building a static web site dinamically.
 
