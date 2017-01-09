@@ -20,7 +20,7 @@ To start a new project just clone the repo and run the following commands (remov
 
 1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
 2. ```npm install```<br>
-**Note:** Because harp-js uses Ruby for sass and other features under the hood, you might see error logs in your screen just run this ```npm install grunt-harp``` with sudo before the next command)
+**Note:** Because harp-js uses Ruby for sass and other features under the hood, you might see error logs in your screen, if that's the case, just run this ```npm install grunt-harp``` with sudo before the next command)
 3. ```bower install```
 4. ```mkdir _site/public/js/vendor```
 5. ```npm start```<br>
