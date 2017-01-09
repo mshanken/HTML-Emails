@@ -19,7 +19,8 @@ Before you start, make sure you have the following requirements for using this t
 To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
 
 1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
-2. ```npm install``` (if you see error logs in your screen just run this ```npm install grunt-harp``` with sudo before the next command)
+2. ```npm install```<br>
+**Note:** Because harp uses Ruby for sass and other feaure under he hood in background, you might see error logs in your screen just run this ```npm install grunt-harp``` with sudo before the next command)
 3. ```bower install```
 4. ```mkdir _site/public/js/vendor```
 5. ```npm start```<br>
