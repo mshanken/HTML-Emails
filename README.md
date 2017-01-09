@@ -13,8 +13,9 @@ Before you start, make sure you have the following requirements for using this t
 1. Ruby
 2. Node
 3. NPM
-4. Grunt (you can also run this locally, if prefer)
-5. Bower  (you can also run this locally, if prefer)
+4. Harp js ```npm install harp -g```
+5. Grunt (you can also run this locally, if prefer)
+6. Bower  (you can also run this locally, if prefer)
 
 To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
 
