@@ -1,7 +1,7 @@
 #Harpjs Boilerplate
 
 This is a starter-kit for building a static web site dynamically. Perfect for small promotional or event web-sites.
-Check Harpjs for advance use like [M. Shanken](http://www.mshanken.com/).
+Check Harpjs for advance use like [M. Shanken](https://github.com/mshanken/mshanken).
 
 <strong>NEW:</strong> Harp-Boilerplate works with boostrap 4 by default, move to "less branch" if you want to use less.
 
