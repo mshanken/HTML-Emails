@@ -1,7 +1,7 @@
 #Harpjs Boilerplate
 
 This is a starter-kit for building a static web site dynamically. Perfect for small promotional or event web-sites.
-Check Harpjs for advance use like [M. Shanken](https://github.com/mshanken/mshanken).
+Check Harpjs for advance use like the [M. Shanken](https://github.com/mshanken/mshanken) site.
 
 <strong>NEW:</strong> Harp-Boilerplate works with boostrap 4 by default, move to "less branch" if you want to use less.
 
@@ -65,5 +65,5 @@ Google analitics and openGraph code ready to use, turned off by default.
 2. [WS Apps site](https://github.com/mshanken/appswinespectator)
 3. [Wine Experience](https://github.com/mshanken/wineexperience)
 
-Others should folllow.
+Others should follow, specially for 2 or more static page web sites.
 
