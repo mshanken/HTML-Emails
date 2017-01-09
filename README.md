@@ -59,3 +59,11 @@ Web-server to preview your work on your browser.<br>
 BrowserSync to preview your changes as you work with out refreshing your browser.<br>
 gh-pages branch to compile your work into the root folder for github to render your static html.<br>
 Google analitics and openGraph code ready to use, turned off by default.
+
+##Projects using this tool:
+1. [M. Shanken](https://github.com/mshanken/mshanken)
+2. [WS Apps site](https://github.com/mshanken/appswinespectator)
+3. [Wine Experience](https://github.com/mshanken/wineexperience)
+
+Others should folllow.
+
