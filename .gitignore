@@ -46,7 +46,7 @@ web/phpinfo.php
 npm-debug.log
 www/
 _site/public/js/vendor
-_site/public/css/vendor
+_site/public/css/_vendor
 _site/public/fonts/vendor
 _site/public/images/vendor
 _site/public/_css
