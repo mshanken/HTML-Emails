@@ -1,4 +1,4 @@
-FROM node:4.7.2
+FROM node:6.9.4
 MAINTAINER M. Shanken Communications <dev@mshanken.com>
 
 # set up node user
