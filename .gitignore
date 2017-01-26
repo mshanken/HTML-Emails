@@ -41,9 +41,9 @@ lib/SysConfig.config.php
 web/webgrind/
 web/phpinfo.php
 
-# For harp
-.npm
+# For boilerplate-tool
 npm-debug.log
+.bash_history
 www/
 _site/public/js/vendor
 _site/public/css/_vendor

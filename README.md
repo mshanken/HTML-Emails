@@ -3,11 +3,43 @@
 This is a starter-kit for building a static web site dynamically. Perfect for small promotional or event web-sites.
 Check Harpjs for advance use like the [M. Shanken](https://github.com/mshanken/mshanken) site.
 
-<strong>NEW:</strong> Harp-Boilerplate works with boostrap 4 by default, move to "less branch" if you want to use less.
+Harp-Boilerplate works with boostrap 4 by default, move to "less branch" if you want to use less.
 
 Check out [harpjs for more info](http://harpjs.com/docs/).
 
-#How it works
+
+##Welcome to version 2.
+
+Not much change to it, it jjust now works under docker containers.
+
+##Requirement
+
+You only need docker and [docker](https://www.docker.com/) to run this project. All components are inside so you don'tt need node, grunt, or harp in your local machine. Docker will intall everythin in that container you just have to work in your HTML, CSS, JS.
+
+##How it works
+To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
+
+1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
+
+	a. Remove git ```rm -R .git```. then add to a new or already initiated repo
+
+	b. _Optional_, create a new branch and start working from it.
+
+2. Run ```docker-compose up -d``` in your teminal start project
+
+That's all. Type this URL ```http://localhost:9000/``` in your browser you have a web site running.<br>
+**Note:** There's sass bug running now (not the project though) in Bootstarp4 (which is used in here) so you might not able to see your page the frist time for now just open ```_site/public/css/_vendor/bootstrap.scss``` file and comment out line #51 and the go back to your browser, refresh URL noted or re-open.
+
+Good news you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```http://localhost:9000/```
+
+##What aboout GH_PAGES
+
+Once you are ready to deploy just move to gh-pages branch (don't forgte to merge your branch) and run ```docker-compose run harp compile _site www``` after that just move your dist (www) folder to your root folder ```mv -r www ./``` now you can commit and push to gh-pages.
+
+
+#Version 1.
+
+##How it works
 Before you start, make sure you have the following requirements for using this tool.
 
 1. Ruby
