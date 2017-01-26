@@ -12,7 +12,7 @@ Check out [harpjs for more info](http://harpjs.com/docs/).
 
 Not much change to it, it jjust now works under docker containers.
 
-##Requirement
+##Requirements
 
 You only need docker and [docker](https://www.docker.com/) to run this project. All components are inside so you don'tt need node, grunt, or harp in your local machine. Docker will intall everythin in that container you just have to work in your HTML, CSS, JS.
 
@@ -32,12 +32,12 @@ That's all. Type this URL ```http://localhost:9000/``` in your browser you have 
 
 Good news you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```http://localhost:9000/```
 
-##What aboout GH_PAGES
+##What aboout GH-PAGES?
 
 Once you are ready to deploy just move to gh-pages branch (don't forgte to merge your branch) and run ```docker-compose run harp compile _site www``` after that just move your dist (www) folder to your root folder ```mv -r www ./``` now you can commit and push to gh-pages.
 
 
-#Version 1.
+##Version 1
 
 ##How it works
 Before you start, make sure you have the following requirements for using this tool.
