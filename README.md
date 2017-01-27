@@ -37,7 +37,7 @@ Good news, you don't have to refresh, it has browser-sync as well, not running a
 ###What aboout GH-PAGES?
 
 Once you are ready to deploy just move to gh-pages branch (don't forgte to merge your branch) and run ```docker-compose run web npm run gh-pages``` after that just move your dist (www) folder to your root folder ```mv -r www ./``` now you can commit and push to gh-pages.
-##Command lines
+##Command lines you ca use
 
 ```docker-compose up -d``` builds the project in a docker container
 
