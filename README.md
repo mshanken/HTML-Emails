@@ -17,6 +17,8 @@ Not much change to it, it jjust now works under docker containers.
 You only need docker and [docker](https://www.docker.com/) to run this project. All components are inside so you don'tt need node, grunt, or harp in your local machine. Docker will intall everythin in that container you just have to work in your HTML, CSS, JS.
 
 ##How it works
+
+###Start
 To start a new project just clone the repo and run the following commands (remove git if you are planing to create as a new repo after you cloned ```rm -R .git``` to clear it first)
 
 1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
@@ -30,11 +32,28 @@ To start a new project just clone the repo and run the following commands (remov
 That's all. Type this URL ```http://localhost:9000/``` in your browser you have a web site running.<br>
 **Note:** There's sass bug running now (not the project though) in Bootstarp4 (which is used in here) so you might not able to see your page the frist time for now just open ```_site/public/css/_vendor/bootstrap.scss``` file and comment out line #51 and the go back to your browser, refresh URL noted or re-open.
 
-Good news you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```http://localhost:9000/```
+Good news, you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```http://localhost:9000/```
 
-##What aboout GH-PAGES?
+###What aboout GH-PAGES?
 
-Once you are ready to deploy just move to gh-pages branch (don't forgte to merge your branch) and run ```docker-compose run harp compile _site www``` after that just move your dist (www) folder to your root folder ```mv -r www ./``` now you can commit and push to gh-pages.
+Once you are ready to deploy just move to gh-pages branch (don't forgte to merge your branch) and run ```docker-compose run web npm run gh-pages``` after that just move your dist (www) folder to your root folder ```mv -r www ./``` now you can commit and push to gh-pages.
+##Command lines
+
+```docker-compose up -d``` builds the project in a docker container
+
+```docker-compose exec -d web npm run browsersync``` starts browser-sync
+
+```docker-compose run web npm run compile``` compiles served site into static HTML in a folder "www"
+
+```docker-compose run web npm run gh-pages``` drops compiled files into root folder<br>
+**Note:** this comand should be used in gh-branch only.
+
+```docker-compose stop``` to turn off the docker container.
+
+```docker-compose down``` to remove this container.
+
+**Note:** It's good practice to always turn container off when not using it.
+
 
 
 ##Version 1
