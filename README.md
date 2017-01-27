@@ -23,14 +23,20 @@ To start a new project just clone the repo and run the following commands (remov
 
 1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
 
-	a. Remove git ```rm -R .git```. then add to a new or already initiated repo
+	a. cd into the project.
 
-	b. _Optional_, create a new branch and start working from it.
+	b. Create a folder in the css folder and name it _vendor ```mkdir _site/public/css/_vendor```
+
+	c. Create a folder in the ja folder and name it vendor ```mkdir _site/public/js/vendor```
+
+	d. Remove git ```rm -R .git```. then add to a new or already initiated repo
+
+	e. _Optional_, create a new branch and start working from it.
 
 2. Run ```docker-compose up -d``` in your teminal start project
 
 That's all. Type this URL ```http://localhost:9000/``` in your browser you have a web site running.<br>
-**Note:** There's sass bug running now (not the project though) in Bootstarp4 (which is used in here) so you might not able to see your page the frist time for now just open ```_site/public/css/_vendor/bootstrap.scss``` file and comment out line #51 and the go back to your browser, refresh URL noted or re-open.
+**Note:** There's sass bug running now (not the project though) in Bootstarp4 (which is used in here) so you might not able to see your page the frist time for now just open ```_site/public/css/_vendor/bootstrap.scss``` file and comment out line #51 (e.g // @import "bower_components/bootstrap/scss/carousel";) and them go back to your browser, refresh URL noted or re-open.
 
 Good news, you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```http://localhost:9000/```
 

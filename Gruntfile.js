@@ -41,16 +41,16 @@ module.exports = function(grunt) {
     'harp:staticserver'
   ]);
   grunt.registerTask('compile', [
-    'harp:dist',
-    'concat',
+    // 'harp:dist',
+    // 'concat',
     'uglify'
   ]);
   grunt.registerTask('gh-pages', [
-    'harp:dist',
-    'concat',
+    // 'harp:dist',
+    // 'concat',
     'uglify',
     'htmlmin',
-    'cssmin',
+    // 'cssmin',
     'copy:ghpages'
   ]);
   grunt.registerTask('start', [
