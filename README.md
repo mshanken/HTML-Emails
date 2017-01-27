@@ -56,7 +56,7 @@ Once you are ready to deploy just move to gh-pages branch (don't forgte to merge
 
 
 
-##Version 1
+##Version 1 (this version still in service, just move (checkout) to the sass branch)
 
 ##How it works
 Before you start, make sure you have the following requirements for using this tool.
