@@ -38,7 +38,7 @@ To start a new project just clone the repo and run the following commands (remov
 That's all. Type this URL ```http://localhost:9000/``` in your browser you have a web site running.<br>
 **Note:** There's sass bug running now (not the project though) in Bootstarp4 (which is used in here) so you might not able to see your page the frist time for now just open ```_site/public/css/_vendor/bootstrap.scss``` file and comment out line #51 (e.g // @import "bower_components/bootstrap/scss/carousel";) and them go back to your browser, refresh URL noted or re-open.
 
-Good news, you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g ```[http://localhost:9000/](http://localhost:9000/)```
+Good news, you don't have to refresh, it has browser-sync as well, not running as default but you can just run ```docker-compose exec -d web npm run browsersync``` and now chenge its port to 3000 e.g [http://localhost:9000/](http://localhost:9000/)
 
 ###What aboout GH-PAGES?
 
@@ -47,7 +47,7 @@ Once you are ready to deploy just move to gh-pages branch (don't forgte to merge
 
 ```docker-compose up -d``` builds the project in a docker container
 
-```docker-compose exec web npm run browsersync``` starts browser-sync ```[http://localhost:3000/](http://localhost:3000/)``` hit ```Ctrl + P and Ctrl + Q``` to detach.
+```docker-compose exec web npm run browsersync``` starts browser-sync [http://localhost:3000/](http://localhost:3000/) hit ```Ctrl + P and Ctrl + Q``` to detach.
 
 ```docker-compose exec web npm run compile``` compiles served site into static HTML in a folder "www"
 
