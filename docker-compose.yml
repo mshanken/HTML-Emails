@@ -2,9 +2,7 @@ version: "2"
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: elwebdeveloper/harp
 
     working_dir: /home/node
     volumes:
@@ -15,4 +13,4 @@ services:
     ports:
       - "9000:9000"
       - "3000:3000"
-      - "3001:3001"
+      

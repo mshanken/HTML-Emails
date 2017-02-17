@@ -44,6 +44,8 @@ web/phpinfo.php
 # For boilerplate-tool
 npm-debug.log
 .bash_history
+.cache
+.local
 www/
 _site/public/js/vendor
 _site/public/css/_vendor
