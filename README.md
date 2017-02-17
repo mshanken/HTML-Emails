@@ -47,7 +47,7 @@ Once you are ready to deploy just move to gh-pages branch (don't forgte to merge
 
 ```docker-compose up -d``` builds the project in a docker container
 
-```docker-compose exec -d web npm run browsersync``` starts browser-sync ```[http://localhost:3000/](http://localhost:3000/)``` hit ```Ctrl + P and Ctrl + Q``` to detach.
+```docker-compose exec web npm run browsersync``` starts browser-sync ```[http://localhost:3000/](http://localhost:3000/)``` hit ```Ctrl + P and Ctrl + Q``` to detach.
 
 ```docker-compose exec web npm run compile``` compiles served site into static HTML in a folder "www"
 
