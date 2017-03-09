@@ -64,7 +64,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('min', [
     'useminPrepare',
-    'imagemin',
+    // 'imagemin',
     'htmlmin',
     'cssmin',
     'concat',
