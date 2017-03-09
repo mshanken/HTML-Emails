@@ -1,6 +1,6 @@
-FROM elwebdeveloper/node-ruby
+FROM node:6.9.4
 LABEL maintainer="M. Shanken Communications <dev@mshanken.com>"
-LABEL description="Node 6.9.4, no gems installed"
+LABEL description="Node 6.9.4"
 
 # set up node user
 RUN npm install -g harp grunt-cli node-sass bower browser-sync
