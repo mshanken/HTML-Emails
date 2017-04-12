@@ -15,7 +15,6 @@ WORKDIR $HOME
 
 RUN chown -R www-data:www-data $HOME \
 	&& mkdir $HOME/www \
-	&& mkdir $HOME/_site/public/js/vendor \
 	&& npm install && bower install --allow-root
 
 EXPOSE 9000
