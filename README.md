@@ -21,19 +21,19 @@ You only need docker [docker](https://www.docker.com/) to run this project. All 
 
 1. ```git clone git@github.com:mshanken/harp-boilerplate.git new-repo-name```
     
-    a. Remove git ```rm -R .git```. then add to a new or already initiated repo that you want to update with in this tool.
+    a. Remove git ```rm -R .git```. then add to a new or already initiated repo that you want to update with in this tool (jump to step 2).
 
 ### To start from a project that uses this tool
 
-1. ```git clone git@github.com:mshanken/repo-name```
+    1. ```git clone git@github.com:mshanken/repo-name```
 
-	a. cd into the project.
+2. cd into the project.
 
-	b. Create a folder in the css folder and name it _vendor ```mkdir _site/public/css/_vendor```
+3. Create a folder in the css folder and name it _vendor ```mkdir _site/public/css/_vendor```
 
-	c. Create a folder in the ja folder and name it vendor ```mkdir _site/public/js/vendor```
+4. Create a folder in the ja folder and name it vendor ```mkdir _site/public/js/vendor```
 
-	d. _Optional_, create a new branch and start working from it.
+5. _Optional_, create a new branch and start working from it.
 
 ## Use and avialable command.
 
