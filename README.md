@@ -35,7 +35,7 @@ You only need docker [docker](https://www.docker.com/) to run this project. All 
 
 5. _Optional_, create a new branch and start working from it.
 
-## Use and avialable command.
+## How to use avialable commands.
 
 ```docker-compose up -d``` builds the project in a docker container.<br>
 Once that's done. Type this URL ```http://localhost:9000/``` in your browser you have a web site running.<br>
@@ -49,6 +49,8 @@ You can also run [browser-sync](https://www.browsersync.io/), not running as def
 **Ready to deploy?** 
 ```docker-compose exec web npm run gh-pages``` Once you are ready to deploy just move to gh-pages branch merge your branch and run ```docker-compose run web npm run gh-pages``` what this command does is compiled (if not compiled) then drops compiled files into root folder<br>
 **Note:** this comand should be used in gh-pages branch only.
+
+Run ```docker-compose exec web /bin/bash``` to access docker machine from terminal an run other grunt/npm comands.
 
 ```docker-compose stop``` to turn off the docker container.
 
