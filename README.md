@@ -25,7 +25,7 @@ You only need docker [docker](https://www.docker.com/) to run this project. All 
 
 ### To start from a project that uses this tool
 
-    1. ```git clone git@github.com:mshanken/repo-name```
+    1. git clone git@github.com:mshanken/repo-name
 
 2. cd into the project.
 
