@@ -63,7 +63,7 @@ Once you have followed the initial steps check your new working directory _site/
 Bootstrap 4.<br>
 jqury latest (3^).<br>
 HarpJS built-in preprocessing configured to work with a default theme.<br>
-Sass as a css preprocessor.<br>
+Sass (node-sass) as a css preprocessor.<br>
 Web-server to preview your work on your browser.<br>
 BrowserSync to preview your changes as you work with out refreshing your browser.<br>
 You can use your own machine IP to check in your mobile (e.g [10.0.3.211:300](http://10.0.3.211:3000/)).<br>
