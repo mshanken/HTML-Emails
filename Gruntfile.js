@@ -55,7 +55,7 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('start', [
     'bower',
-    'frep',
+    // 'frep',
   ]);
   grunt.registerTask('lint', [
     'jscs',
