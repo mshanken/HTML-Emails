@@ -125,4 +125,3 @@ This command will copy the generated HTML (compiled) version of your site at roo
 
 **NOTE:** this command should run once you are in the **_gh-pages_** branch only.
 
-
