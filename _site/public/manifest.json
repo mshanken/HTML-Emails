@@ -1,0 +1,10 @@
+{
+  "css/theme.css": "/css/theme.css",
+  "js/app.js": "/js/app.js",
+  "js/vendor.js": "/js/vendor.js",
+  "runtime.js": "/runtime.js",
+  "images/apple-touch-icon.png": "/images/apple-touch-icon.png",
+  "images/favicon.ico": "/images/favicon.ico",
+  "images/tile-wide.png": "/images/tile-wide.png",
+  "images/tile.png": "/images/tile.png"
+}
