@@ -1,6 +1,6 @@
 let path = require('path');
 
-module.exports = {
+/* module.exports = {
   sourceMap: true,
   ident: 'postcss',
   plugins: [
@@ -8,7 +8,7 @@ module.exports = {
       plugins: [
         require('stylelint')(path.resolve(__dirname, './.stylelintrc'))
       ]
-    }),*/
+    }),* /
     require('stylelint')({
       configFile: path.resolve(__dirname, './.stylelintrc')
     }),
@@ -20,10 +20,10 @@ module.exports = {
       }
     })
   ],
-}
-/*module.exports = {
-    plugins: {
-        autoprefixer: {}
-    }
-}*/
+}; */
+module.exports = {
+  plugins: {
+    autoprefixer: {}
+  }
+};/**/
 

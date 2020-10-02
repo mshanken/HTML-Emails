@@ -34,10 +34,10 @@
       "application-name": "",
       "msapplication-tooltip": "",
       "msapplication-TileColor": "#009900",
-      "msapplication-square70x70logo": "images/smalltile.png",
-      "msapplication-square150x150logo": "images/mediumtile.png",
-      "msapplication-wide310x150logo": "images/widetile.png",
-      "msapplication-square310x310logo": "images/largetile.png",
+      "msapplication-square70x70logo": "/images/smalltile.png",
+      "msapplication-square150x150logo": "/images/mediumtile.png",
+      "msapplication-wide310x150logo": "/images/widetile.png",
+      "msapplication-square310x310logo": "/images/largetile.png",
       "msapplication-notification": "frequency=30;polling-uri=notificationscontoso1.xml;polling-uri2=notifications/contoso2.xml; polling-uri3=notifications/contoso3.xml",
       "twitter:card": "summary",
       "twitter:site": "@site_account",
@@ -45,7 +45,7 @@
       "twitter:url": "",
       "twitter:title": "",
       "twitter:description": "",
-      "twitter:image": "",
+      "twitter:image": ""
     },
     "manifest": {
       "css/theme.css": "/css/theme.css",
