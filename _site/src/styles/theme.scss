@@ -7,10 +7,101 @@
 //
 // Load core variables and mixins
 // --------------------------------------------------
-
+@import 'node_modules/susy/sass/susy';
+// @import 'node_modules/susy/sass/susy-prefix';
+@import 'node_modules/susy/sass/plugins/svg-grid';
+// @import 'node_modules/susy/sass/plugins/svg-grid/prefix';
 @import "node_modules/bootstrap/scss/functions";
 @import "custom";
 @import "node_modules/bootstrap/scss/bootstrap";
 //
 // Custom style starts here
 // --------------------------------------------------
+
+
+$susy: (
+  'svg-grid-colors': hsl(180, 50%, 80%),
+  'container': 100%,
+  'columns': susy-repeat($grid-columns),
+  'gutters': $grid-gutter-width
+);
+/* ,
+  'spread': 'wide',
+  'container-spread': 'wide',
+ */
+
+@include media-breakpoint-up(md) {
+  .row::after {
+    clear: both;
+    content: ' ';
+    display: table;
+  }
+}
+.container{
+    background: susy-svg-grid() no-repeat scroll; // Remove from production
+    width:100%;
+    .row{
+      @include media-breakpoint-up(lg) {
+        display: flex;
+      }
+      .col-2 {
+        /* flex: 1 1 span(2 of 12); */
+        width: span(12);
+        margin-left: gutter();
+        margin-right: gutter();
+        @include media-breakpoint-up(md) {
+          float: left;
+          width: span(2);
+        }
+        @include media-breakpoint-up(lg) {
+          float: none;
+          flex: 1 1 span(2 of 12);
+          order: 2;
+        }
+      }
+      .col-4 {
+        /* flex: 1 1 span(4 of 12); */
+        width: span(12);
+        margin-left: gutter();
+        margin-right: gutter();
+         @include media-breakpoint-up(md) {
+          float: left;
+          width: span(4);
+        }
+        @include media-breakpoint-up(lg) {
+          float: none;
+          flex: 1 1 span(4 of 12);
+          order: 3;
+        }
+      }
+      .col-5 {
+        /* flex: 1 1 span(6 of 12); */
+        width: span(12);
+        margin-left: gutter();
+        margin-right: gutter();
+         @include media-breakpoint-up(md) {
+          float: left;
+          width: span(5);
+        }
+        @include media-breakpoint-up(lg) {
+          float: none;
+          flex: 1 1 span(5 of 12);
+          order: 1;
+        }
+      }
+      .col-1 {
+        /* flex: 1 1 span(6 of 12); */
+        width: span(12);
+        margin-left: gutter();
+        margin-right: gutter();
+         @include media-breakpoint-up(md) {
+          float: left;
+          width: span(1);
+        }
+        @include media-breakpoint-up(lg) {
+          float: none;
+          flex: 1 1 span(1 of 12);
+        }
+      }
+    }
+}
